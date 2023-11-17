@@ -36,7 +36,7 @@ export function dataSourceFactory(configService: ConfigService) {
 
 export function dataSourceTestFactory(configService: ConfigService) {
   return buildDataSource(configService, {
-    entities: ['dist/**/*.entity.js'],
+    entities: ['src/**/*.entity.js'],
     logging: false,
   });
 }
